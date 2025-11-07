@@ -64,6 +64,8 @@ My list
    
 The image above depicts my list page, which enables users to view recipes that have been created by first choosing a category, then choosing a recipe within that category. After viewing the recipe details, users can choose whether to edit or delete a recipe.
 
+The Youtube link
+The video link explaining all the details about the app will be seen with this link here: https://youtu.be/MIT9NQz9WPw 
 
 
 
