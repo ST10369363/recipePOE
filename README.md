@@ -36,6 +36,36 @@ To run the project, simply clone it from the repository, open it in Android Stud
 
 This project serves as a practical example of integrating **Firebase Realtime Database** with **Android Kotlin**, demonstrating CRUD operations (Create, Read, Update, Delete), real-time data synchronization, and simple data caching for offline access. It provides a solid foundation for learning how to manage structured data and user interaction in mobile applications.
 
+Login
+ 
+The login page is the first page the user will see. As you can see, it has a lot going on, but it's still user-friendly. To access the app, the user must be online; if they are not, they won't be able to access it. However, there are safeguards in place in case the user goes offline, so they will need to re-enter their email address and password. They haven't created an account, so how do you sign in with Google or create the real project, which is the app.
+Sign in
+ 
+Clicking "create an account" will take the user to the sign-in page where they must enter their name, last name, email address, password, and budget. However, if they click "create an account" or "remember what their information is," they can click "go back," which will return them to the login page.
+
+SSO / Google signin
+ 
+If the user decides not to utilise the app to establish an account, they can click on "create" or "use Google sign-in" or "SSO," which will require the user to have a Google account and make it easier for them to log in.
+Settings
+ 
+After successfully logging in, the user will be directed to the settings page, where they can view their email address in case they forget it and select a preferred language. We use the Gemini API key to modify the language features, so as developers, we can choose the language we want to add. Currently, it displays as is, but users can translate languages as they please. After that, the user can choose whether or not to receive notifications and log out of the page.
+Navigation 
+ 
+The image displays the navigation; clicking one of the buttons will take the user to the appropriate page. The first icon will direct the user to the explore page, where they can conduct an online recipe search; the middle icon will display the user's recipe book; and the final icon will enable users to create recipes.
+
+Explore page.
+   
+This image displays the "explore recipes" page. Users will be limited to 15 users per day due to the spoonacular API key we were using. For the time being, users can search for a simple recipe by clicking the search button beneath it. Simple searches will yield a list of recipes that are related to what the user has searched for. If they choose one, the ingredients and instructions will appear on the next page, allowing the user to see the ingredients, steps, and necessary actions. Clicking the back button will return the user to the previous page.
+Create a recipe
+   
+The next page in the image demonstrates how to create a recipe by choosing a recipe category, such as breakfast, lunch, dinner, or dessert music. After that, the user must enter their name, the recipe name, the number of ingredients, and the ingredients in their own cooking steps. They can then select "add to recipe" to receive a notification that their recipe has been added. Additionally, a feature has been added so that if the user was online when accessing the recipe app and for whatever reason, the recipes will be stored on local memory until they return to the cloud database.
+
+My list 
+   
+The image above depicts my list page, which enables users to view recipes that have been created by first choosing a category, then choosing a recipe within that category. After viewing the recipe details, users can choose whether to edit or delete a recipe.
+
+
+
 
 
 
